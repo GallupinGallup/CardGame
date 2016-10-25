@@ -14,6 +14,8 @@
 		5C3515641DBFE43700724626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3515621DBFE43700724626 /* LaunchScreen.storyboard */; };
 		5C35156F1DBFE43700724626 /* CardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C35156E1DBFE43700724626 /* CardGameTests.swift */; };
 		5C35157A1DBFE43700724626 /* CardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3515791DBFE43700724626 /* CardGameUITests.swift */; };
+		5C7C5A7C1DBFE7CB0074EA1C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5A7B1DBFE7CB0074EA1C /* Card.swift */; };
+		5C7C5A7E1DBFE7E50074EA1C /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5A7D1DBFE7E50074EA1C /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5C3515751DBFE43700724626 /* CardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3515791DBFE43700724626 /* CardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameUITests.swift; sourceTree = "<group>"; };
 		5C35157B1DBFE43700724626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7C5A7B1DBFE7CB0074EA1C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		5C7C5A7D1DBFE7E50074EA1C /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				5C3515601DBFE43700724626 /* Assets.xcassets */,
 				5C3515621DBFE43700724626 /* LaunchScreen.storyboard */,
 				5C3515651DBFE43700724626 /* Info.plist */,
+				5C7C5A7F1DBFEAD50074EA1C /* Model */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
@@ -123,6 +128,15 @@
 				5C35157B1DBFE43700724626 /* Info.plist */,
 			);
 			path = CardGameUITests;
+			sourceTree = "<group>";
+		};
+		5C7C5A7F1DBFEAD50074EA1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C5A7B1DBFE7CB0074EA1C /* Card.swift */,
+				5C7C5A7D1DBFE7E50074EA1C /* PlayingCard.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C35155C1DBFE43700724626 /* ViewController.swift in Sources */,
+				5C7C5A7C1DBFE7CB0074EA1C /* Card.swift in Sources */,
+				5C7C5A7E1DBFE7E50074EA1C /* PlayingCard.swift in Sources */,
 				5C35155A1DBFE43700724626 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +500,7 @@
 				5C3515801DBFE43700724626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C3515811DBFE43700724626 /* Build configuration list for PBXNativeTarget "CardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				5C3515831DBFE43700724626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C3515841DBFE43700724626 /* Build configuration list for PBXNativeTarget "CardGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				5C3515861DBFE43700724626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
