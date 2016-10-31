@@ -16,10 +16,10 @@ class Playing : Card
     
     override init()
     {
-        rank = 0
         suit = ""
         color = UIColor()
         super.init()
+        rank = Int()
     }
     
     func getrank() ->Int
@@ -36,7 +36,18 @@ class Playing : Card
     }
     func toString() ->String
     {
-        let description = "the card rank is: \(rank) the color is: \(color) and the suit is: \(suit)"
+        let backStatus :String
+        if super.isFacing()
+        {
+            backStatus = " is face up"
+        }
+        else
+        {
+            backStatus = " isface down"
+        }
+        
+        
+        let description = "the card rank is: \(rank) the color is: \(color) and the suit is: \(suit) and \(backStatus)"
         return description
     }
 }
