@@ -8,18 +8,25 @@
 
 import UIKit
 
-class Playing : Card
+class PlayingCard : Card
 {
-    private var rank : Int
-    private var suit : String
-    private var color : UIColor
+    internal var rank : Int
+    internal var suit : String
+    internal var color : UIColor
     
     override init()
     {
         suit = ""
         color = UIColor()
-        super.init()
         rank = Int()
+        super.init()
+    }
+    
+    init(withRank: Int, ofSuit: String){
+        color = UIColor.redColor()
+        suit = ofSuit
+        rank = withRank
+        super.init()
     }
     
     func getrank() ->Int
@@ -34,7 +41,11 @@ class Playing : Card
     {
         return color
     }
-    func toString() ->String
+    func getCardData() -> String
+    {
+        return "\(PlayingCard.validRanks()[rank]) \(suit)"
+    }
+    override func toString() ->String
     {
         let backStatus :String
         if super.isFacing()
@@ -49,5 +60,19 @@ class Playing : Card
         
         let description = "the card rank is: \(rank) the color is: \(color) and the suit is: \(suit) and \(backStatus)"
         return description
+    }
+    class func validRanks() -> [String]
+    {
+        return["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func maxRank() -> Int
+    {
+        return validRanks().count - 1
+    }
+    
+    class func validSuits() -> [String]
+    {
+        return ["♦️","♣️","♥️","♠️"]
     }
 }

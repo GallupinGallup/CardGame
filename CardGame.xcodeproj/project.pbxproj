@@ -136,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				5C7C5A7B1DBFE7CB0074EA1C /* Card.swift */,
-				5C376EAA1DC7C5C900E69FE4 /* Deck.swift */,
 				5C376EAC1DC7C5DC00E69FE4 /* PlayingCardDeck.swift */,
+				5C376EAA1DC7C5C900E69FE4 /* Deck.swift */,
 				5C7C5A7D1DBFE7E50074EA1C /* PlayingCard.swift */,
 			);
 			name = Model;
